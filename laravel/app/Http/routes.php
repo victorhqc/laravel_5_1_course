@@ -18,3 +18,14 @@ Route::get('/', function () {
 Route::get('/v1/startup', function() {
     return 'Hello world!';
 });
+
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+Route::resource('/v1/user', 'UserController');
