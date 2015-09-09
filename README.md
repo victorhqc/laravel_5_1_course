@@ -27,4 +27,6 @@ CREATE SCHEMA IF NOT EXISTS `course`;
 
     ```
 $ env
+echo $MYSQL_PORT_3306_TCP_ADDR
+echo $MYSQL_ENV_MYSQL_ROOT_PASSWORD
     ```
