@@ -29,3 +29,4 @@ Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::resource('/v1/user', 'UserController');
+Route::resource('/v1/currency', 'CurrencyController');
