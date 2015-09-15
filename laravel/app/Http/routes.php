@@ -30,3 +30,4 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::resource('/v1/user', 'UserController');
 Route::resource('/v1/currency', 'CurrencyController');
+Route::resource('/v1/account', 'AccountsController');

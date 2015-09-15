@@ -21,8 +21,11 @@ class PlatformMigration extends Migration
 
         Schema::create('account', function(Blueprint $table) {
             $table->increments('id');
+            $table->float('amount')->nullable();
             $table->integer('user_id')->unsigned();
             $table->integer('currency_id')->unsigned();
+            $table->nullableTimestamps();
+            $table->softDeletes();
             $table->foreign('currency_id')
             ->references('id')->on('currency')
             ->onDelete('cascade')->onUpdate('cascade');
