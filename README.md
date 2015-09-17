@@ -8,7 +8,7 @@
 
     ```
 $ docker run --name laravel-mysql -v /home/victor/Hacking/iTexico/training/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.6
-$ docker run -it -p 5000:80 --name laravel-course --link laravel-mysql:mysql -d -v /your/path/to/laravel_5_1_course/laravel/:/var/www/html/laravel victorhqc/laravel-5-1-course:1.0 bash
+$ docker run -it -p 5000:80 --name laravel-course --link laravel-mysql:mysql -d -v /your/path/to/laravel_5_1_course/laravel:/var/www/html/laravel victorhqc/laravel-5-1-course:1.0 bash
     ```
 
 4. Enter to the image and test MySQL (for password use "_password_")
