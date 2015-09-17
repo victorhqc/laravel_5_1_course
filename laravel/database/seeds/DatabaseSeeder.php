@@ -14,10 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call(CurrencySeeder::class);
-        $this->call(UserTableSeeder::class);
-        $this->call(AccountSeeder::class);
-
         Model::reguard();
     }
 }
