@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/v1/startup', function() {
+Route::get('/welcome', function() {
     return 'Hello world!';
+});
+
+Route::get('/test/users', function() {
+    return \App\User::all();
 });
 
 // Authentication routes...
