@@ -17,6 +17,10 @@ class BankAccount extends Model
         return $this->belongsTo('\App\Currency');
     }
 
+    public function movements() {
+        return $this->hasMany('\App\Movement');
+    }
+
     public function getAmountAttribute($value) {
         return (float)$value;
     }
